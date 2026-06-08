@@ -1,0 +1,23 @@
+Useful Googlesheet Functions:
+
+rand() %Generate U(0,1)
+norminv(cell,mean,std) %Generate N(mean,std^2), 0<cell<1 
+if (test;yes;no) %If instruction
+
+pi() %pi=3.14...
+ln(cell) %Natural Logarithm
+var(cells) %Variance estimator
+average(cells) %Mean estimator
+exp(cell) %Exponential function
+sqrt(cell) %Square root
+cell^2 %Square/power
+
+Operation on Matrices:
+Transpose(matrix) %Matrix transpose
+mmult(matrix1;matrix2) %Matrix product
+minverse(squarematrix) %Inverse of a square matrix
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+=$D$2+A2*($E$2-$D$2)
+
+=if(A2<$E$4;$D$2+sqrt(A2*($E$2-$D$2)*($F$2-$D$2));$E$2-sqrt((1-A2)*($E$2-$D$2)*($E$2-$F$2)))
